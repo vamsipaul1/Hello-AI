@@ -1,0 +1,8 @@
+# Hello AI - Deployment Notes
+
+## Environment
+- Node modules (if any)
+- Local development files
+node_modules
+.env
+.env.local
