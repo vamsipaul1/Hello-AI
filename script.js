@@ -3,7 +3,7 @@ const isDevelopment = window.location.hostname === 'localhost' || window.locatio
 
 // DEVELOPMENT ONLY: Add your API key here for local testing
 // Get your key from: https://console.groq.com
-const DEV_API_KEY = "YOUR_GROQ_API_KEY_HERE"; // Replace with your actual key for local development
+const DEV_API_KEY = window.LOCAL_CONFIG?.GROQ_API_KEY || "YOUR_GROQ_API_KEY_HERE"; // Load from config.local.js or use placeholder
 
 const messagesContainer = document.getElementById("messages")
 const userInput = document.getElementById("userInput")
